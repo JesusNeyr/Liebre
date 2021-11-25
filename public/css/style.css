@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #ebebeb;
+}
+h3{
+    font-size: 24px;
+}
+p{
+    font-size: 12px;
+}
+.top-header{
+    padding: 5%;
+}
+header{
+    background-color: #EAC926;
+}
+.logo{
+    width: 50%;
+    padding: 10px;
+}
+.menu{
+    font-size: 12px;
+    display: none;
+}
+.menu > ul > li{
+    list-style-type:none;
+}
+.menu > ul > li > a{
+    text-decoration: none;
+    color: #000;
+}
+.form{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form > .input{
+    width: 60%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    border-radius: 5px 0 0 5px;
+}
+.form > .submit{
+    background-color: #fff;
+    border: none;
+    color: #666;
+    width: 30px;
+    border-radius: 0 5px 5px 0;
+}
+.top-header > p{
+    width: 100%;
+    text-align: center;
+    margin-top:10px;
+}
+.burger-menu{
+    text-align: center;
+}
+.burger-menu > i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    height:40px;
+    width: 40px;
+    margin: 10px 0 20px 0;
+    padding: 10px;
+}
+.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+.main-article > i{
+    background: #fff;
+    display: block;
+    font-size: 16px;
+    border: 1px solid green;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}  
+.price{
+    font-size: 18px;
+}
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal; 
+}
+h3, .description{
+    color: #666;
+    display:none;
+}
+.products > 
+.description{
+    color: #666;
+    display:none;
+}
+.banner > img{
+    width: 100%;
+}
+main{
+    width: 90%;
+    margin: auto;
+}
+main section article{
+    background-color: #fff;
+}
+main section article img{
+    width: 100%;
+}
+main section article i,
+.discount{
+    color: #39b54a;
+}
+article{
+    margin: 10px;
+}
+.description{
+    display: none;
+}
+.contHeader{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedor-pie{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+}
+.description{
+    display: none;
+    margin-top: 20px;
+}
+@media only screen and (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 40%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+    .contenedor-pie{
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 1em;
+        
+    }
+    .contenedor-info{
+        display: block;
+    }
+    .contenedor-copy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*desktop*/
+@media only screen and (min-width:769px){
+    .burger-menu{display: none;}
+    .menu{display: block;}
+    .top-header{
+        display: flex;
+        align-items: center;
+        padding: 1%;
+    }
+    header{
+        padding-bottom: 30px;
+    }
+    .form{
+        justify-content: center;
+    }
+    .top-header > p{
+        width: 55%;
+    }
+    main section div.products{
+        
+        flex-wrap: nowrap;
+    }
+    .logo{
+        width: 55%;
+    }
+    .contHeader{
+        width: 100%;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .submit{
+        margin-left: 5px;
+        border-radius: 5px;
+    }
+    .input{
+        border-radius: 5px;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu > ul{
+        display: flex;
+    }
+    .article{
+        width: 44%;
+    }
+    article:hover{
+        box-shadow: 0 0 5px 1px rgb(100,100,100);
+    }
+    article:hover .description{
+        display: block;
+    }
+    .main-article>i:hover{
+        transform: rotate(-90deg);
+        transition: all ease 1s;
+    }
+    .menu > ul > li{
+        font-size: .8rem;
+        padding: 3px 5px;
+    }
+    .main-article > i{
+        margin-left: 100px;
+        margin-top: -30px;
+        position: absolute;
+    }
+    .submit input:hover{
+        background-color: #0022AA;
+        transition: all 0.5s;
+    }
+}
